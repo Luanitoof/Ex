@@ -1,0 +1,26 @@
+package EX5;
+import java.util.Scanner;
+public class Login {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Digite o usuario");
+		String user = scanner.nextLine();
+		
+		System.out.println("Digite a senha: ");
+		String senha = scanner.nextLine();
+		
+		String username = "luanito" ;
+		String password = "123";
+		
+		if (user.equals(username) && senha.equals(password)) {
+			System.out.println("Login bem sucedido.");
+		}
+		else {
+			System.out.println("Nome de usuario ou senha incorreto otauro :(");
+		}
+
+	}
+
+}
