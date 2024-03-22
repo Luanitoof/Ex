@@ -1,0 +1,66 @@
+package EX4;
+import java.util.Scanner;
+public class Calculomain {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Escolha o operador: \n 1 - soma \n 2 - multiplicacao \n 3 - subtracao \n 4 - divisao");
+		int operador = scanner.nextInt();
+		
+		if(operador == 1) {
+			Calculadora p1 = new Calculadora();
+			System.out.println("Digite o primeiro numero: ");
+			int valorNumero1 = scanner.nextInt();
+			
+			System.out.println("Digite o segundo numero");
+			int valorNumero2 = scanner.nextInt();
+			
+			p1.numeros(valorNumero1, valorNumero2);
+			System.out.println("O valor da soma é: " + p1.soma());
+			scanner.close();
+			
+		}
+		else if (operador == 2) {
+			Calculadora p2 = new Calculadora();
+			
+			System.out.println("Digite o primeiro numero: ");
+			int valorNumero1 = scanner.nextInt();
+			
+			System.out.println("Digite o segundo numero: ");
+			int valorNumero2 = scanner.nextInt();
+			
+			p2.numeros(valorNumero1, valorNumero2);
+			System.out.println("O valor da multiplicacao é " + p2.mult());
+			scanner.close();
+		}
+		else if (operador == 3) {
+			Calculadora p3 = new Calculadora();
+			
+			System.out.println("Digite o primeiro numero: ");
+			int valorNumero1 = scanner.nextInt();
+			
+			System.out.println("Digite o segundo numero: ");
+			int valorNumero2 = scanner.nextInt();
+			
+			p3.numeros(valorNumero1, valorNumero2);
+			System.out.println("O valor da subtracao é " + p3.sub());
+			scanner.close();
+		}
+		else if (operador == 4) {
+			Calculadora p4 = new Calculadora();
+			
+			System.out.println("Digite o primeiro numero: ");
+			int valorNumero1 = scanner.nextInt();
+			
+			System.out.println("Digite o segundo numero: ");
+			int valorNumero2 = scanner.nextInt();
+			
+			p4.numeros(valorNumero1, valorNumero2);
+			System.out.println("O valor da divisao é " + p4.div());
+			scanner.close();
+		}
+
+	}
+
+}
