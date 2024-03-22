@@ -1,0 +1,24 @@
+package EX4;
+
+public class Calculadora {
+	public int numero1;
+	public int numero2;
+	
+	public int soma() { 
+		return numero1 + numero2;
+	}
+	public int mult() {
+		return numero1 * numero2;
+	}
+	public int sub() {
+		return numero1 - numero2;
+	}
+	public int div() {
+		return numero1/numero2;
+	}
+	public void numeros (int valorNumero1, int valorNumero2) {
+		numero1 = valorNumero1;
+		numero2 = valorNumero2;	
+	}
+
+}
